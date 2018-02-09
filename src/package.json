@@ -1,0 +1,28 @@
+{
+  "name": "parking-core",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repo"
+  },
+  "author": {
+    "name": "Imran Ashraf",
+    "email": "emranashraf@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repo/issues"
+  },
+  "main": "parking-core.umd.js",
+  "module": "parking-core.js",
+  "jsnext:main": "parking-core.js",
+  "typings": "parking-core.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
