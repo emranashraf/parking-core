@@ -16,7 +16,7 @@ export class AuthEffects {
     .ofType(AuthActionTypes.Login)
     .map(toPayload)
     .switchMap(payload => this.authService.login(payload)
-      .map(data => new LoginSuccessAction({ user: data }))
+      .map((data) => new LoginSuccessAction({ user: data }))
       .catch(() => Observable.of({ type: AuthActionTypes.LoginFailure }))
     );
 

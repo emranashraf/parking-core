@@ -8,6 +8,10 @@ To install this library, run:
 $ npm install parking-core --save
 ```
 
+## link this project
+open 'dist' folder
+run this command 'npm link'
+
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
