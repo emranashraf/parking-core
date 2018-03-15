@@ -26,14 +26,7 @@ export class AuthService {
       password
     };
 
-    return this.http.post<any>(`http://localhost:4000/api/users/login`, user)
-            .map((data) => {
-              console.log(data.error);
-              if (data.error) {
-                console.log('hello');
-                return Observable.throw(new Error('Invalid email or password'));
-              }
-            });
+    return this.http.post<any>(`http://localhost:4000/api/users/login`, user);
   }
 
   logout() {
