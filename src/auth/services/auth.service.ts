@@ -26,12 +26,10 @@ export class AuthService {
       password
     };
 
-    return this.http.post<any>(`http://localhost:4000/api/users/login`, user);
+    return this.http.post<any>(`http://localhost:4000/api/user/login`, user);
   }
 
   logout() {
     return of(true);
   }
-
-
 }
